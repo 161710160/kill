@@ -66,7 +66,7 @@
 			<div class="polished-sidebar bg-light col-12 col-md-3 col-lg-2 p-0collapse d-md-inline" id="sidebar-nav">
 		<ul class="polished-sidebar-menu ml-0 pt-4 p-0 d-md-block">
 		<input class="border-dark form-control d-block d-md-none mb-4" type="text" placeholder="Search" aria-label="Search" />
-		<li><a href="/home"><span class="oi oi-home"></span> Home</a>
+		<li><a href="/homeadmin"><span class="oi oi-home"></span> Home</a>
 			<li><a href="{{route('produks.index')}}"><span class="oi oi-book"></span>
 			Produk</a></li>
 			<li><a href="{{route('orders.index')}}"><span class="oi oi-inbox"></span>

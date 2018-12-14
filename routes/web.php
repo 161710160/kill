@@ -15,6 +15,9 @@
 
 
 Auth::routes();
+Route::get('/', function(){
+	return view('frontends.index');
+});
 
 Route::group(['middleware' => ['web', 'auth']], function(){
 
@@ -34,7 +37,7 @@ Route::group(['middleware' => ['web', 'auth']], function(){
     Route::resource('orders', 'OrderController');
     Route::resource('checkouts', 'CheckoutController');
 
-    Route::get('/', function(){
+    Route::get('/home', function(){
         if (Auth::user()->admin == 0){
             return view('frontends.index');
         }else {
